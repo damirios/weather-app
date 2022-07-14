@@ -1,0 +1,50 @@
+.week-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    padding: 10px;
+}
+.week-single-day {
+    border: 1px solid #000;
+    border-radius: 5px;
+    flex: 1 1 150px;
+    width: 250px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    box-shadow: 1px 1px 3px rgb(90, 90, 90);
+}
+.day-name {
+    grid-area: 1 / 1 / 2 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+.day-name__day {
+    font-size: 26px;
+}
+.day-name__date {
+    font-size: 22px;
+}
+.day-temperature {
+    grid-area: 2 / 1 / -1 / 2;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: space-between; */
+}
+.day-temp {
+    font-size: 30px;
+}
+.night-temp {
+    font-size: 18px;
+}
+.week-single-day img {
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    justify-self: end;
+}

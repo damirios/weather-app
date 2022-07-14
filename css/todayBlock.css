@@ -1,0 +1,77 @@
+
+.today-column {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    /* row-gap: 20px; */
+    padding: 10px;
+    color: rgb(19, 19, 19);
+    /* -webkit-text-stroke: 0.8px rgb(219, 130, 27); */
+    font-family: 'Flomaster';
+    font-family: 'Poppins';
+    font-size: 22px;
+    font-weight: 500;
+}
+.today__city {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+.today__main-info {
+    font-size: 26px;
+    font-style: italic;
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 7px;
+}
+.today__main-info img {
+    max-width: 34px;
+}
+.today__date {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.today__temperature {
+    padding-top: 10px;
+    font-size: 44px;
+}
+.today__temperature-feels {
+    font-size: 18px;
+    /* padding-bottom: 10px; */
+}
+.today__clouds-percentage {
+    margin-bottom: 30px;
+    font-size: 18px;
+    padding: 5px 0;
+}
+.today__humidity {
+    margin-bottom: 30px;
+    padding: 10px 0;
+}
+.today__pressure {
+    margin-bottom: 30px;
+    padding: 10px 0;
+}
+.today__sun {
+    display: flex;
+    column-gap: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    padding: 10px 0;
+}
+.today__sun::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    height: 60%;
+    width: 2px;
+    background-color: rgb(73, 73, 73);
+}
+.today__wind {
+}

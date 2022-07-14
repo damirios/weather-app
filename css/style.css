@@ -1,0 +1,55 @@
+@import url('resetStyle.css');
+@import url('searchBlock.css');
+@import url('todayBlock.css');
+@import url('weekBlock.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@font-face {
+    font-family: 'Flomaster';
+    src: url('../fonts/flomaster.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Homework';
+    src: url('../fonts/homework-normal.TTF') format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Homework';
+    src: url('../fonts/homework-smart.TTF') format('truetype');
+    font-weight: 400;
+}
+
+/* ================================================== */
+.wrapper {
+    height: 100%;
+    width: 100%;
+}
+.content {
+    width: 100%;
+    height: 100%;
+    background: url('../images/bg_Irina.jpg');
+    background-size: 100% 100%;
+}
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 100%;
+}
+.content-row {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+.today-block {
+    flex: 1 1 350px;
+}
+.search-block {
+    flex: 1 1 500px;
+}
+.week-block {
+    flex: 1 1 350px;
+}
