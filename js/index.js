@@ -38,7 +38,7 @@ function errorHandling(error) {
         if (error == 'empty') {
             errorParagraph.textContent = 'You should enter the name of the city!';
         } else {
-            errorParagraph.textContent = 'Something wrong! Maybe written city does not exist, he!';
+            errorParagraph.textContent = 'Maybe written city does not exist, he!';
         }
         errorParagraph.classList.add('error-input');
         searchInput.classList.add('invalid');
