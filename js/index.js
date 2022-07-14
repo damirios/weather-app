@@ -148,7 +148,7 @@ function fillWeekInfo(weekForecast) {
 
 // gets ===================================================================
 async function getWeekForecast(city, apiKey) {
-    let weekInfo = await fetch(`http://api.openweathermap.org/data/2.5/forecast/?APPID=${apiKey}&q=${city}&units=metric&cnt=50`, {
+    let weekInfo = await fetch(`https://api.openweathermap.org/data/2.5/forecast/?APPID=${apiKey}&q=${city}&units=metric&cnt=50`, {
         mode: 'cors',
     });
     if (weekInfo.ok) {
@@ -161,7 +161,7 @@ async function getWeekForecast(city, apiKey) {
 }
 
 async function getWeatherData(city, apiKey) {
-    let weatherData = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}&units=metric`, {
+    let weatherData = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}&units=metric`, {
         mode: 'cors',
     });
     if (weatherData.ok) {
