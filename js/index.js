@@ -22,7 +22,9 @@ async function main(city) {
         fillWeekInfo(weekForecast);
         searchInput.value = '';
     } else {
-        resetErrorParagraph();
+        if ( searchInput.classList.contains('invalid') ) {
+            resetErrorParagraph();
+        }
         errorHandling('wrong city name');
     }
 }
@@ -148,7 +150,7 @@ function fillWeekInfo(weekForecast) {
 
 // gets ===================================================================
 async function getWeekForecast(city, apiKey) {
-    let weekInfo = await fetch(`https://api.openweathermap.org/data/2.5/forecast/?APPID=${apiKey}&q=${city}&units=metric&cnt=50`, {
+    let weekInfo = await fetch(`https://api.openweathermap.org/data/2.5/forecast/?APPID=${apiKey}&q=${city}&units=metric&cnt=40`, {
         mode: 'cors',
     });
     if (weekInfo.ok) {
